@@ -1,5 +1,23 @@
-
 colorscheme molokai-dark
+
+"let g:clang_format#code_style='google'
+""map to <Leader>cf in C++ code only visual mode
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
+" Automatically add closing brackets after pressing enter similarly to VS
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+" Enable syntax highlighting
+syntax on
+
+" Show filename
+set laststatus=2
 
 " 4 spaces instead of tabs
 set expandtab
@@ -75,6 +93,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'rhysd/vim-clang-format'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
