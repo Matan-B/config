@@ -20,3 +20,6 @@ mv colors/ ~/.vim/
 
 # vim plugin install
 `vim +PluginInstall +qall`
+
+# tmux with toolset
+`scl enable gcc-toolset-13 tmux`
