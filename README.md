@@ -1,5 +1,8 @@
 ### deps
-`sudo yum install vim tmux zsh curl`
+`sudo yum install vim tmux zsh curl git`
+
+# `this` repo
+`git clone https://github.com/Matan-B/config.git`
 
 # vundle
 `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
